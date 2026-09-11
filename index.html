@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="晨盤 Brunch Atlas：從盤中風味、口感與做法，認識三款經典早午餐。" />
+    <meta name="theme-color" content="#071b2e" />
+    <title>晨盤 Brunch Atlas｜早午餐主題圖鑑</title>
+    <link rel="preload" href="assets/brunch-hero.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#atlas">跳到圖鑑條目</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="晨盤 Brunch Atlas 首頁">
+        <span class="brand-mark" aria-hidden="true">B.</span>
+        <span>晨盤 <small>BRUNCH ATLAS</small></span>
+      </a>
+      <nav aria-label="主要導覽">
+        <a href="#atlas">圖鑑</a>
+        <a href="#formats">收錄格式</a>
+        <span class="issue">ISSUE 001</span>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img src="assets/brunch-hero.png" alt="深藍桌面上的班尼迪克蛋、優格水果碗、酸種麵包與咖啡" />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="eyebrow"><span>01</span> MORNING EDITION</p>
+          <h1 id="hero-title">把早晨，<br />吃成一張<span>風味地圖</span>。</h1>
+          <p class="hero-intro">從一顆蛋、一片麵包到一匙優格，沿著口感、香氣與做法，讀懂早午餐的日常學問。</p>
+          <a class="hero-link" href="#atlas">翻開本期圖鑑 <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-note" aria-hidden="true">
+          <span>BRUNCH</span>
+          <span>/brʌntʃ/</span>
+          <span>BREAKFAST + LUNCH</span>
+        </div>
+      </section>
+
+      <section class="atlas-section" id="atlas" aria-labelledby="atlas-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow dark"><span>03</span> FIELD NOTES</p>
+            <h2 id="atlas-title">本期風味條目</h2>
+          </div>
+          <p>三道經典，三條理解早午餐的路徑。點選條目，展開文字、影片、互動作品或簡報內容。</p>
+        </div>
+        <div class="entry-grid" id="entryGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="format-section" id="formats" aria-labelledby="format-title">
+        <div class="format-lead">
+          <p class="eyebrow"><span>04</span> OPEN FORMAT</p>
+          <h2 id="format-title">一個條目，<br />不只一種讀法。</h2>
+        </div>
+        <div class="format-list" role="list">
+          <article role="listitem"><span>TXT</span><h3>文字筆記</h3><p>適合故事、食材知識與風味解析。</p></article>
+          <article role="listitem"><span>VID</span><h3>影片</h3><p>嵌入教學、訪談或短紀錄。</p></article>
+          <article role="listitem"><span>WEB</span><h3>HTML 作品</h3><p>容納互動小工具與視覺實驗。</p></article>
+          <article role="listitem"><span>SLD</span><h3>簡報</h3><p>以分頁節奏整理步驟與觀點。</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>晨盤 BRUNCH ATLAS</p>
+      <p>讓每一份早餐，都有值得細讀的註腳。</p>
+      <a href="#top">回到頁首 ↑</a>
+    </footer>
+
+    <dialog class="entry-dialog" id="entryDialog" aria-labelledby="dialogTitle">
+      <button class="dialog-close" type="button" aria-label="關閉條目">×</button>
+      <div id="dialogContent"></div>
+    </dialog>
+  </body>
+</html>
